@@ -53,8 +53,15 @@ commands:
   togom:
     description: Togo Mode (DebugOnBE 設定GUI) コマンド
     usage: /togom [types/reset/lim/radius/duration/replace]
+  erh:
+    description: "エンドロール・ホログラム管理コマンド"
+    usage: /erh <tool|angle|menu|list|reload>
+    aliases: [endrollhologram, hologram]
 
 permissions:
+  endrollhologram.admin:
+    description: "ホログラムの管理者権限 (他プレイヤーのホログラム編集やリロード)"
+    default: op
   redbull.use:
     description: "Red Bull の一日 fly 権限を有効にする"
     default: true

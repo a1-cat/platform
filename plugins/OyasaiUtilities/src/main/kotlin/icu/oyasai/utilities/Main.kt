@@ -48,9 +48,11 @@ class Main : JavaPlugin() {
     CreativeManagement.onEnable()
     RedBullFeature.onEnable()
     DebugOnBE.onEnable(this)
+    icu.oyasai.utilities.hologram.HologramFeature.onEnable(this)
   }
 
   override fun onDisable() {
+    icu.oyasai.utilities.hologram.HologramFeature.onDisable()
     OreReappears.onDisable() // OreReappearsの無効化
     AdminBP.onDisable()
     Pita.onDisable() // Pitaの無効化
