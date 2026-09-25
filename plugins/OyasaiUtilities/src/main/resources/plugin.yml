@@ -84,8 +84,15 @@ commands:
     description: "ホログラム"
     usage: /oholo <create|delete|list|near|movehere|line|import|range|seethrough>
     permission: oyasaiutilities.hologram
+  erh:
+    description: "エンドロール・ホログラム管理コマンド"
+    usage: /erh <tool|angle|menu|list|reload>
+    aliases: [endrollhologram, hologram]
 
 permissions:
+  endrollhologram.admin:
+    description: "ホログラムの管理者権限 (他プレイヤーのホログラム編集やリロード)"
+    default: op
   oyasai.skin:
     description: "スキン変更コマンドの使用権限"
     default: op

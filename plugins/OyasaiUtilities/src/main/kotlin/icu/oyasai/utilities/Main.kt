@@ -74,9 +74,11 @@ class Main : JavaPlugin() {
     CreativeManagement.onEnable()
     RedBullFeature.onEnable()
     DebugOnBE.onEnable(this)
+    icu.oyasai.utilities.endroll.EndRollFeature.onEnable(this)
   }
 
   override fun onDisable() {
+    icu.oyasai.utilities.endroll.EndRollFeature.onDisable()
     if (::sitFeature.isInitialized) sitFeature.disable()
     if (::skinFeature.isInitialized) skinFeature.disable()
     OreReappears.onDisable() // OreReappearsの無効化
